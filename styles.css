@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+h1,h2,h3,h4,h5{
+    margin: 0;
+}
+
+h1{
+    margin-bottom: 3%;
+}
+.container{
+    width: 350px;
+    margin:0 auto;
+    
+}
+
+.income-expense{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card
+{
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+    width: 90%;
+    margin: 10% auto 0;
+    padding: 5%;
+    background-image: url('images/2.jpg');
+    border-radius: 16px;
+}
+
+.first-part{
+    color: aliceblue;
+    background-image: url('images/card.jpg');
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    padding: 8% 6% 0;
+
+}
+
+.second-part{
+    padding: 10% 6%;
+    /*background-image: url('images/4.jpg');*/
+    /* background: linear-gradient(white,white,rgb(135, 241, 255),white); */
+    /* background: radial-gradient(circle,#41C9E2 ,white,white); */
+}
+
