@@ -18,34 +18,36 @@
             </div>
             <div class="card">
                 <h3>Total Balance</h3>
-                <h1>$<span id="balance">0</span></h1>
+                <h1>₹<span id="balance">0</span></h1>
                 <div class="income-expense">
                     <div>
                         <h4>Income</h4>
-                        <h2>$<span id="income">0</span></h2>
+                        <h2>₹<span id="income">0</span></h2>
                     </div>
                     <div>
                         <h4>Expenses</h4>
-                        <h2>$<span id="expense">0</span></h2>
+                        <h2>₹<span id="expense">0</span></h2>
                     </div>
                 </div>
             </div>
         </div>
         <div class="second-part">
-            <h2>Transaction History</h2>
+            <h3>Transaction History</h3>
+            <hr>
             <ul>
             </ul>
-            <h2>Add Transaction</h2>
+            <h3>Add Transaction</h3>
+            <hr>
             <form action="">
                 <div>
-                    <label for="">Description:</label>
-                    <input id="description" type="text" placeholder="Description...">
+                    <label for="">Description:</label><br>
+                    <input id="description" type="text" placeholder="  Description...">
                 </div>
                 <div>
-                    <label for="">Amount:</label>
-                    <input id="amount" type="number" placeholder="Enter Amount...">
+                    <label for="">Amount:<br>(negative - expense, positive - income)</label><br>
+                    <input id="amount" type="number" placeholder="  Enter Amount...">
                 </div>
-                <input type="submit" value="Add" id="button">
+                <input type="submit" value="Add Transaction" id="button">
             </form>
         </div>
     </div>

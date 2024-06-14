@@ -23,13 +23,14 @@ function updatevalues()
 function add(e)
 {
     e.preventDefault();
-    if(text.value===" " || amt.value===" ")
+    if(text.value==="" || amt.value==="")
     {
         alert("Add a text and amount");
     }
     else{
         const list=document.createElement("li");
-        list.innerHTML=text.value+amt.value;
+        list.classList.add(amt.value<0?"minus":"plus");
+        list.innerHTML=text.value+"<span>"+amt.value+"</span><button class='delete-btn' onclick='removeTransaction()'>X</button>";
         history.appendChild(list);
         updatevalues();
 
