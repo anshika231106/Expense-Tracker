@@ -13,19 +13,19 @@
     <div class="container">
         <div class="first-part">
             <div>
-                <h5>Good Evening!</h5>
-                <h4>Anshika Chauhan</h4>
+                <h4>Good Evening!</h4>
+                <h5>User</h5>
             </div>
             <div class="card">
                 <h3>Total Balance</h3>
                 <h1>₹<span id="balance">0</span></h1>
                 <div class="income-expense">
                     <div>
-                        <h4>Income</h4>
+                        <h4>Income <span class="green">↑</span></h4>
                         <h2>₹<span id="income">0</span></h2>
                     </div>
                     <div>
-                        <h4>Expenses</h4>
+                        <h4>Expenses <span class="red">↓</span></h4>
                         <h2>₹<span id="expense">0</span></h2>
                     </div>
                 </div>
@@ -41,11 +41,11 @@
             <form action="">
                 <div>
                     <label for="">Description:</label><br>
-                    <input id="description" type="text" placeholder="  Description...">
+                    <input id="description" type="text" placeholder="Description...">
                 </div>
                 <div>
                     <label for="">Amount:<br>(negative - expense, positive - income)</label><br>
-                    <input id="amount" type="number" placeholder="  Enter Amount...">
+                    <input id="amount" type="number" placeholder="Enter Amount...">
                 </div>
                 <input type="submit" value="Add Transaction" id="button">
             </form>

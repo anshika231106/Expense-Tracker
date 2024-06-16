@@ -22,6 +22,14 @@ h1{
     justify-content: space-between;
 }
 
+.green{
+    color: rgb(0, 255, 0);
+}
+
+.red{
+    color: red;
+}
+
 .card
 {
     font-family: "Chakra Petch", sans-serif;
@@ -64,6 +72,7 @@ li{
     position: relative;
     display: flex;
     justify-content: space-between;
+    box-shadow: 1px 1px 2px grey;
 }
 
 .delete-btn{
@@ -71,7 +80,7 @@ li{
     text-decoration: bold ;
     background: rgb(170, 0, 0);
     position: absolute;
-    right: -7%;
+    right: -8%;
     opacity: 0;
 
 }
@@ -93,8 +102,8 @@ hr{
 }
 
 #description, #amount{
-    width: 100%;
-    padding: 0.7rem 0;
+    width: 94%;
+    padding: 0.7rem 0.5rem;
     margin: 3% 0 5%;
     font-size: 1rem;
 }

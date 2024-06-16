@@ -7,16 +7,18 @@ const history=document.querySelector("ul");
 
 function remove(ID)
 {
-    const bal=Number(document.getElementById(ID).firstElementChild.innerHTML);
-    
-    if(bal>0)
+    let bal=document.getElementById(ID).firstElementChild.innerHTML;
+    const mp=bal.slice(0,1);
+    bal=bal.slice(1,bal.length);
+    bal=Number(bal);
+    if(bal>0 && mp!="-")
     {
-        balance.innerHTML=Number(balance.innerHTML)-Math.abs(bal);
+        balance.innerHTML=Number(balance.innerHTML)-bal;
         income.innerHTML=Number(income.innerHTML)-bal;
     }
     else{
-        balance.innerHTML=Number(balance.innerHTML)+Math.abs(bal);
-        expense.innerHTML=Number(expense.innerHTML)+bal;
+        balance.innerHTML=Number(balance.innerHTML)+bal;
+        expense.innerHTML=Number(expense.innerHTML)-bal;
     }
 
     const del=document.getElementById(ID);
@@ -49,9 +51,10 @@ function add(e)
     else{
         const list=document.createElement("li");
         list.classList.add(amt.value<0?"minus":"plus");
+        var sign=amt.value>0?"+":"-";
         var ID=(Math.floor(Math.random()*100000));
         list.setAttribute("id",ID);
-        list.innerHTML=text.value+"<span>"+amt.value+"</span><button class='delete-btn' onclick='remove("+ID+")'>X</button>";
+        list.innerHTML=text.value+"<span>"+sign+Math.abs(amt.value)+"</span><button class='delete-btn' onclick='remove("+ID+")'>X</button>";
         history.appendChild(list);
         updatevalues();
 
